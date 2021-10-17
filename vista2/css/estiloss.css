@@ -1,0 +1,141 @@
+/* este es un estilo por defecto que recetea el codigo de los estilos globales del navegador  */
+* {
+	box-sizing: border-box; /* todos los elementos dentro de la pagina para que el espaciado externo y interno sumen un solo espaciado */
+	margin: 0; /* para que no exista margen hacia afuera */
+	padding: 0; /* para que no haya espaciados hacia adentro */
+	/* Nota: Padding crea espacio extra dentro de un elemento. En contraste, margin crea espacio extra alrededor de un elemento. */
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	padding: 60px 0; /* para que entre secciones exista un espacio */
+	width: 90%; /* hancho del 90% segun la pantalla */
+	max-width: 1000px;
+	margin: auto; /* para que lo centre todo */
+}
+.titulo {
+	color: #642a73;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+/* header */
+header {
+	width: 100%;
+	height: 600px;
+	background: #bc4e9c; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+			to right,
+			hsla(340, 95%, 50%, 0.5),
+			hsla(317, 45%, 52%, 0.5)
+		),
+		url(../img/vista1.png); /* Chrome 10-25, Safari 5.1-6 */
+
+	background: linear-gradient(
+			to right,
+			hsla(340, 95%, 50%, 0.514),
+			hsla(317, 45%, 52%, 0.507)
+		),
+		url(../img/vista1.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+nav {
+	text-align: right;
+	padding: 30px 50px 0 0;
+}
+nav > a {
+	color: white;
+	font-weight: 300;
+	text-decoration: none;
+	margin-right: 20px;
+	font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+}
+nav > a:hover {
+	text-decoration: underline;
+	color: yellow;
+}
+
+.wave {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+header .textos-header {
+	display: flex;
+	height: 430px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.textos-header h1 {
+	font-size: 50px;
+	color: #fff;
+}
+.textos-header p {
+	font-size: 25px;
+	color: #fff;
+}
+
+.contenedor-sobre-noticias {
+	display: flex;
+	justify-content: space-evenly; /* repartera el espacio equitativamente */
+}
+.imagen-about-us {
+	width: 48%;
+}
+.sobre-noticias .contenido-textos {
+	width: 48%;
+}
+
+.contenido-textos h2 {
+	margin-bottom: 15px;
+	font-size: 25px;
+	/* margin-bottom=Establezca el margen inferior de un elemento */
+}
+
+.contenido-textos p {
+	padding: 0px 0px 30px 15px;
+	font-weight: 300;
+	text-align: justify;
+	padding: 5px;
+}
+footer {
+	background: #414141;
+	padding: 60px 0 30px 0;
+	margin: auto;
+	overflow: hidden; /* La propiedad CSS overflow  especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque. */
+}
+.contenedor-footer {
+	display: flex;
+	width: 90%;
+	justify-content: space-evenly;
+	margin: auto;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #ccc;
+}
+.content-foo {
+	text-align: center;
+}
+.content-foo h4 {
+	color: white;
+	border-bottom: 3px solid #af20d3;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+.content-foo p {
+	color: #ccc;
+}
+.titulo-final {
+	text-align: center;
+	font-size: 24px;
+	margin: 20px 0 0 0;
+	color: #9e9797;
+}
